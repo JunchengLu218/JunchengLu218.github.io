@@ -16,7 +16,7 @@ footer_text: >
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: favicon-brain.svg # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://JunchengLu218.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -499,6 +499,10 @@ third_party_libraries:
     url:
       css: "https://cdn.jsdelivr.net/npm/academicons@{{version}}/css/academicons.min.css"
     version: "1.9.5"
+  tabler-icons:
+    url:
+      css: "https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@{{version}}/dist/tabler-icons.min.css"
+    version: "3.44.0"
   chartjs:
     integrity:
       js: "sha256-0q+JdOlScWOHcunpUk21uab1jW7C1deBQARHtKMcaB4="
