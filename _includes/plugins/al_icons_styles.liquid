@@ -1,0 +1,41 @@
+{% assign fontawesome = site.third_party_libraries.fontawesome %}
+{% if fontawesome %}
+  {% assign fontawesome_css = fontawesome.url.css | replace: '{{version}}', fontawesome.version %}
+  <link
+    rel="stylesheet"
+    href="{{ fontawesome_css }}"
+    {% if fontawesome.integrity.css %}
+      integrity="{{ fontawesome.integrity.css }}" crossorigin="anonymous"
+    {% endif %}
+  >
+{% endif %}
+
+{% assign academicons = site.third_party_libraries.academicons %}
+{% if academicons %}
+  {% assign academicons_css = academicons.url.css | replace: '{{version}}', academicons.version %}
+  <link
+    rel="stylesheet"
+    href="{{ academicons_css }}"
+    {% if academicons.integrity.css %}
+      integrity="{{ academicons.integrity.css }}" crossorigin="anonymous"
+    {% endif %}
+  >
+{% endif %}
+
+{% assign scholar_icons = site.third_party_libraries['scholar-icons'] %}
+{% if scholar_icons %}
+  {% assign scholar_icons_css = scholar_icons.url.css | replace: '{{version}}', scholar_icons.version %}
+  <link
+    rel="stylesheet"
+    href="{{ scholar_icons_css }}"
+    {% if scholar_icons.integrity.css %}
+      integrity="{{ scholar_icons.integrity.css }}" crossorigin="anonymous"
+    {% endif %}
+  >
+{% endif %}
+
+{% assign tabler_icons = site.third_party_libraries['tabler-icons'] %}
+{% if tabler_icons %}
+  {% assign tabler_icons_css = tabler_icons.url.css | replace: '{{version}}', tabler_icons.version %}
+  <link rel="stylesheet" href="{{ tabler_icons_css }}">
+{% endif %}

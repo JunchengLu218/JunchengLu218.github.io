@@ -118,19 +118,19 @@
       "name": "Machine Learning",
       "date": "2018-01-01",
       "issuer": "Stanford University",
-      "icon": "fa-solid fa-location-dot"
+      "icon": "ti ti-map-pin"
     },
     {
       "name": "Quantum Computing",
       "date": "2018-01-01",
       "issuer": "Stanford University",
-      "icon": "fa-solid fa-tag"
+      "icon": "ti ti-tag"
     },
     {
       "name": "Quantum Information",
       "date": "2018-01-01",
       "issuer": "Stanford University",
-      "icon": "fa-solid fa-envelope"
+      "icon": "ti ti-mail"
     }
   ],
   "publications": [
@@ -160,7 +160,7 @@
     {
       "name": "Physics",
       "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "icon": "ti ti-hash",
       "keywords": [
         "Quantum Mechanics",
         "Quantum Computing",
@@ -186,7 +186,7 @@
   "interests": [
     {
       "name": "Physics",
-      "icon": "fa-solid fa-tag",
+      "icon": "ti ti-tag",
       "keywords": [
         "Quantum Mechanics",
         "Quantum Computing",
@@ -200,12 +200,12 @@
   "references": [
     {
       "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
+      "icon": "ti ti-device-laptop",
       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
     },
     {
       "name": "Professor Jane Smith",
-      "icon": "fa-solid fa-thumbtack",
+      "icon": "ti ti-pin",
       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
     }
   ],
