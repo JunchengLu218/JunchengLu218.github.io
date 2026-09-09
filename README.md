@@ -21,12 +21,23 @@ data/               CV PDF
    (600×600 or larger; it gets cropped to a circle).
 2. **Scholar and LinkedIn URLs** — `index.html` has two `REPLACE_ME` placeholders in the
    link row. Fix them, or delete the lines you don't want.
-3. **Thumbnails** — the four figures are inline SVG *schematics* (an MPT tree, a
-   drift-diffusion path over an ERP trace, a narrowing group difference, latent
-   parameters mapped onto brain activation). Each matches the method its entry actually
-   used, but they illustrate the method — they are not plots of real data. Swap in real
-   figures when you have them: replace the `<svg>…</svg>` inside a `<div class="thumb">`
-   with `<img src="images/your-figure.png" alt="…">`.
+3. **Thumbnails** — the four figures are inline SVG *schematics*. Each matches the method
+   its entry actually used, but they illustrate the method — they are not plots of real
+   data. Swap in real figures when you have them.
+
+   Thumbnails are 1:1 (160×160 on desktop). A `<div class="thumb">` stacks its children in
+   one square; add `class="on-hover"` to a second image or SVG and it cross-fades in over
+   0.35s while the pointer is anywhere on the row:
+
+   ```html
+   <div class="thumb">
+     <img src="images/before.jpg" alt="what the figure shows" />
+     <img class="on-hover" src="images/after.jpg" alt="" aria-hidden="true" />
+   </div>
+   ```
+
+   Touch devices have no hover and only ever see the base layer, so never put essential
+   information in the hover layer. See 编辑指南.md §6 for the full pattern.
 
 ## Editing
 

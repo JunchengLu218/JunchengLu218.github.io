@@ -205,17 +205,45 @@ h2 {
   background: var(--highlight);
 }
 
+/* 缩略图：1:1 正方形，支持鼠标悬停时淡入第二层（图片或 SVG）。
+   用法见「编辑指南.md」第 6 节。 */
 .thumb {
+  position: relative;
   width: 100%;
-  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
   background: var(--fig-bg);
 }
 
-.thumb svg,
-.thumb img {
-  display: block;
+/* 所有直接子元素叠在同一个方形里 */
+.thumb > svg,
+.thumb > img {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  display: block;
+  /* 图片按短边裁切填满方形；内联 SVG 由自己的 viewBox 自适应，不受 object-fit 影响 */
+  object-fit: cover;
+}
+
+/* 第二层：平时透明，悬停时淡入。
+   .item:focus-within 让键盘用户 Tab 到条目内链接时也能看到。 */
+.thumb > .on-hover {
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.item:hover .thumb > .on-hover,
+.item:focus-within .thumb > .on-hover {
+  opacity: 1;
+}
+
+/* 触屏设备没有 hover，只会看到底层——所以第二层不能承载关键信息 */
+@media (prefers-reduced-motion: reduce) {
+  .thumb > .on-hover {
+    transition: none;
+  }
 }
 
 .title {
@@ -365,7 +393,7 @@ footer {
   }
 
   .thumb {
-    max-width: 250px;
+    max-width: 200px; /* 方形之后 250 在手机上太占地方 */
   }
 
   .entry {
