@@ -307,6 +307,11 @@ a.title:hover {
   padding: 8px 0;
 }
 
+/* 给内容特别长的一组用，让它横跨两栏 */
+.tool-group.wide {
+  grid-column: 1 / -1;
+}
+
 .tool-label {
   font-weight: 700;
 }

@@ -21,12 +21,12 @@ data/               CV PDF
    (600×600 or larger; it gets cropped to a circle).
 2. **Scholar and LinkedIn URLs** — `index.html` has two `REPLACE_ME` placeholders in the
    link row. Fix them, or delete the lines you don't want.
-3. **Publication year** — the JESP paper is dated 2026 in the R&R status line; the CV
-   didn't specify one. Check it.
-4. **Thumbnails** — the six figures are inline SVG *schematics* (a drift-diffusion path,
-   an MPT tree, an ERP waveform, and so on). They illustrate the method, they are not
-   plots of real data. Swap in real figures when you have them: replace the `<svg>…</svg>`
-   inside a `<div class="thumb">` with `<img src="images/your-figure.png" alt="…">`.
+3. **Thumbnails** — the four figures are inline SVG *schematics* (an MPT tree, a
+   drift-diffusion path over an ERP trace, a narrowing group difference, latent
+   parameters mapped onto brain activation). Each matches the method its entry actually
+   used, but they illustrate the method — they are not plots of real data. Swap in real
+   figures when you have them: replace the `<svg>…</svg>` inside a `<div class="thumb">`
+   with `<img src="images/your-figure.png" alt="…">`.
 
 ## Editing
 

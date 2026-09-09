@@ -8,14 +8,14 @@
     <meta name="author" content="Juncheng Lu" />
     <meta
       name="description"
-      content="Juncheng Lu — M.A. student in Cognitive Science in Education at Teachers College, Columbia University. Computational modeling (drift diffusion, multinomial processing trees, hierarchical Bayes) of social decision-making and implicit bias."
+      content="Juncheng Lu — M.A. student in Cognitive Science in Education at Teachers College, Columbia University. Hierarchical Bayesian modeling (drift diffusion, MPT/Quad) of intergroup harm, implicit bias, and metacognition, with EEG and fMRI."
     />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Juncheng Lu" />
     <meta
       property="og:description"
-      content="Computational modeling of social decision-making and implicit bias. Teachers College, Columbia University."
+      content="Computational modeling of social decision-making, implicit bias, and metacognition. Teachers College, Columbia University."
     />
     <meta property="og:url" content="https://junchenglu218.github.io/" />
     <meta name="twitter:card" content="summary" />
@@ -56,18 +56,17 @@
           </p>
 
           <p>
-            I use computational models &mdash; drift diffusion, multinomial processing trees,
-            hierarchical Bayesian methods &mdash; to break social decisions apart into the latent
-            cognitive processes that produce them, and to connect those processes to neural measures
-            (fMRI, EEG). Most of my work has been about intergroup harm and implicit bias: not just
-            whether a bias shows up in behavior, but <em>which</em> component of the decision carries
-            it.
+            I use computational models &mdash; hierarchical Bayesian drift diffusion, MPT/Quad
+            &mdash; to break social decisions apart into the latent processes that produce them, and
+            to connect those processes to neural measures (EEG, fMRI). Two questions run through my
+            work: when a group bias shows up in behavior, <em>which</em> component of the decision
+            actually carries it; and how accurately people can predict their own biases.
           </p>
 
           <p>
             Before Columbia I received my B.S. in Psychology from
             <a href="https://english.bnu.edu.cn/">Beijing Normal University</a>, where I worked with
-            Dr. Xiaochun Han on the cognitive and neural mechanisms of intergroup decision-making.
+            Dr. Xiaochun Han on the cognitive and neural mechanisms of intergroup harm.
           </p>
 
           <!-- TODO(you): add Scholar / LinkedIn / ORCID once you have the URLs;
@@ -98,49 +97,14 @@
         <h2>Research</h2>
         <p class="section-intro">
           I'm interested in how social categories &mdash; race, group membership, social role &mdash;
-          shape decisions, and in what formal models can say about why. My approach is to decompose
-          behavior into latent parameters (evidence accumulation rates, starting-point and response
-          biases, automatic versus controlled processes) and then ask which of those parameters
-          actually carries the effect, and whether it tracks anything in the brain.
+          shape decisions about harm, and in what formal models can say about why. My approach is to
+          decompose behavior into latent parameters (evidence accumulation, decision caution,
+          automatic versus controlled processes) and then ask which of those parameters carries the
+          effect, whether it tracks anything in the brain, and whether people have any insight into
+          it.
         </p>
 
-        <!-- ---------------------------------------------------------- pub 1 -->
-        <article class="item is-highlighted">
-          <div class="thumb">
-            <!-- schematic: two-boundary evidence accumulation, two drift rates -->
-            <svg viewBox="0 0 320 200" role="img" aria-label="Drift diffusion schematic: two accumulation paths toward opposing decision boundaries">
-              <rect width="320" height="200" fill="var(--fig-bg)" />
-              <line x1="34" y1="38" x2="300" y2="38" stroke="var(--fig-ink)" stroke-width="2" />
-              <line x1="34" y1="162" x2="300" y2="162" stroke="var(--fig-ink)" stroke-width="2" />
-              <line x1="34" y1="30" x2="34" y2="170" stroke="var(--fig-line)" stroke-width="1.5" />
-              <line x1="34" y1="100" x2="300" y2="100" stroke="var(--fig-line)" stroke-width="1" stroke-dasharray="4 4" />
-              <path d="M34 100 L58 88 L74 96 L96 74 L118 82 L140 62 L162 70 L186 52 L208 58 L232 41 L246 38"
-                    fill="none" stroke="var(--fig-a)" stroke-width="2.4" stroke-linejoin="round" />
-              <path d="M34 100 L56 110 L78 104 L100 118 L124 112 L148 126 L172 121 L196 138 L220 133 L248 150 L266 162"
-                    fill="none" stroke="var(--fig-b)" stroke-width="2.4" stroke-linejoin="round" />
-              <circle cx="34" cy="100" r="3.6" fill="var(--fig-ink)" />
-            </svg>
-          </div>
-          <div>
-            <span class="title">
-              Computational and neural mechanisms of decision-making causing same-race vs.
-              other-race civilian casualties during intergroup conflicts
-            </span>
-            <p class="authors">
-              <span class="me">Juncheng Lu</span>*, Y. Zhang*, X. Han, Z. Xiao, Xiaochun Han&dagger;
-            </p>
-            <p class="venue">
-              Journal of Experimental Social Psychology, <span class="status">revise &amp; resubmit</span>
-            </p>
-            <p class="blurb">
-              Drift diffusion modeling of decisions that produce civilian casualties, showing that
-              the same-race / other-race asymmetry is carried by specific latent decision components
-              rather than by overall response caution.
-            </p>
-          </div>
-        </article>
-
-        <!-- ---------------------------------------------------------- pub 2 -->
+        <!-- ---------------------------------------------------- metacognition -->
         <article class="item">
           <div class="thumb">
             <!-- schematic: multinomial processing tree -->
@@ -166,135 +130,25 @@
             </svg>
           </div>
           <div>
-            <span class="title">
-              Cognitive mechanism of killing decision discrimination between combatants and civilians
-              during intergroup conflict: The influence of social role information
-            </span>
-            <p class="authors">
-              Y. Zhang*, <span class="me">Juncheng Lu</span>*, Xiaochun Han&dagger;
-            </p>
-            <p class="venue">Manuscript in preparation</p>
+            <span class="title">Metacognitive accuracy in implicit bias prediction</span>
+            <p class="authors"><span class="me">Juncheng Lu</span></p>
+            <p class="venue">Manuscript in preparation, 2026</p>
             <p class="blurb">
-              How social role information (combatant vs. civilian) enters the decision process, and
-              which processing stage the discrimination emerges at.
+              Do people predict ingroup-affirming implicit biases more accurately than
+              outgroup-affirming ones? Across 2,986 participant&ndash;IAT observations from 1,866
+              participants on four race and age IATs, I link MPT/Quad and drift-diffusion parameters
+              to directional and continuous prediction accuracy, holding explicit attitudes constant
+              in mixed-effects models, and test the incremental value of the process parameters
+              through nested model comparison.
             </p>
           </div>
         </article>
 
-        <!-- ---------------------------------------------------------- talk -->
-        <article class="item">
-          <div class="thumb">
-            <!-- schematic: ERP-style waveform over a time axis -->
-            <svg viewBox="0 0 320 200" role="img" aria-label="Event-related potential waveform schematic">
-              <rect width="320" height="200" fill="var(--fig-bg)" />
-              <line x1="30" y1="112" x2="296" y2="112" stroke="var(--fig-line)" stroke-width="1.2" />
-              <line x1="66" y1="34" x2="66" y2="176" stroke="var(--fig-line)" stroke-width="1.2" stroke-dasharray="4 4" />
-              <path d="M30 112 L58 110 L66 112 L82 78 L98 132 L118 60 L140 140 L164 92 L190 120 L220 100 L252 110 L296 108"
-                    fill="none" stroke="var(--fig-a)" stroke-width="2.4" stroke-linejoin="round" />
-              <path d="M30 112 L58 113 L66 112 L82 92 L98 124 L118 84 L140 128 L164 104 L190 116 L220 106 L252 112 L296 110"
-                    fill="none" stroke="var(--fig-b)" stroke-width="2.2" stroke-dasharray="5 3" stroke-linejoin="round" />
-            </svg>
-          </div>
-          <div>
-            <span class="title">
-              Computational and neural mechanisms of decision-making causing same-race vs.
-              other-race civilian casualties during intergroup conflicts
-            </span>
-            <p class="authors">
-              <span class="me">Juncheng Lu</span>, Xiaochun Han&dagger;
-            </p>
-            <p class="venue">
-              Social and Affective Neuroscience Society (SANS), April 2024
-            </p>
-            <p class="blurb">Accepted for both oral and poster presentation.</p>
-          </div>
-        </article>
-
-        <p class="note">
-          * Equal contribution. &nbsp;&dagger; Corresponding author.
-        </p>
-      </section>
-
-      <!-- ================================================================ -->
-      <!-- projects                                                          -->
-      <!-- ================================================================ -->
-      <section id="projects">
-        <h2>Projects</h2>
-        <p class="section-intro">
-          Modeling work that hasn't (yet) turned into a paper.
-        </p>
-
-        <!-- ------------------------------------------------------- proj 1 -->
-        <article class="item">
-          <div class="thumb">
-            <!-- schematic: RT distribution splitting into latent parameters -->
-            <svg viewBox="0 0 320 200" role="img" aria-label="Response time distribution decomposed into latent parameters">
-              <rect width="320" height="200" fill="var(--fig-bg)" />
-              <line x1="28" y1="158" x2="296" y2="158" stroke="var(--fig-line)" stroke-width="1.4" />
-              <path d="M40 158 C78 158 82 66 118 66 C152 66 158 158 210 158 Z" fill="var(--fig-a)" opacity="0.30" />
-              <path d="M40 158 C78 158 82 66 118 66 C152 66 158 158 210 158" fill="none" stroke="var(--fig-a)" stroke-width="2.2" />
-              <path d="M96 158 C138 158 144 96 178 96 C214 96 220 158 276 158 Z" fill="var(--fig-b)" opacity="0.26" />
-              <path d="M96 158 C138 158 144 96 178 96 C214 96 220 158 276 158" fill="none" stroke="var(--fig-b)" stroke-width="2.2" />
-              <line x1="118" y1="66" x2="118" y2="158" stroke="var(--fig-ink)" stroke-width="1.2" stroke-dasharray="3 3" />
-              <line x1="178" y1="96" x2="178" y2="158" stroke="var(--fig-ink)" stroke-width="1.2" stroke-dasharray="3 3" />
-            </svg>
-          </div>
-          <div>
-            <span class="title">Awareness of Implicit Bias and Its Cognitive Basis</span>
-            <p class="venue">
-              Independent project, Freeman Lab &middot; Jan 2026 &ndash; present
-            </p>
-            <p class="blurb">
-              Fitting RT-MPT models to several Implicit Association Tests to decompose performance
-              into the latent processes underlying implicit bias and controlled responding, then
-              testing whether people's <em>awareness</em> of their own bias tracks specific model
-              parameters &mdash; i.e. which cognitive components support metacognitive insight into
-              biased behavior. Model specification, estimation, and comparison in R.
-            </p>
-          </div>
-        </article>
-
-        <!-- ------------------------------------------------------- proj 2 -->
-        <article class="item">
-          <div class="thumb">
-            <!-- schematic: model parameters mapped onto a brain outline -->
-            <svg viewBox="0 0 320 200" role="img" aria-label="Model parameters linked to brain activation schematic">
-              <rect width="320" height="200" fill="var(--fig-bg)" />
-              <!-- left: two latent parameter bars -->
-              <rect x="26" y="72" width="74" height="13" rx="4" fill="var(--fig-a)" opacity="0.75" />
-              <rect x="26" y="96" width="50" height="13" rx="4" fill="var(--fig-b)" opacity="0.75" />
-              <rect x="26" y="120" width="62" height="13" rx="4" fill="var(--fig-line)" opacity="0.6" />
-              <!-- arrow -->
-              <path d="M112 103 L142 103" stroke="var(--fig-ink)" stroke-width="2" />
-              <path d="M136 97 L144 103 L136 109 Z" fill="var(--fig-ink)" />
-              <!-- right: brain with two activation clusters -->
-              <path d="M218 46 C252 42 284 66 284 98 C284 132 256 156 222 154 C204 153 196 146 182 143 C160 138 152 122 154 100 C156 76 172 64 190 60 C204 57 206 47 218 46 Z"
-                    fill="none" stroke="var(--fig-ink)" stroke-width="2" />
-              <path d="M190 60 C200 84 194 120 191 143" fill="none" stroke="var(--fig-line)" stroke-width="1.3" />
-              <path d="M232 50 C224 80 232 122 236 152" fill="none" stroke="var(--fig-line)" stroke-width="1.3" />
-              <circle cx="250" cy="88" r="15" fill="var(--fig-a)" opacity="0.5" />
-              <circle cx="206" cy="118" r="11" fill="var(--fig-b)" opacity="0.5" />
-            </svg>
-          </div>
-          <div>
-            <span class="title">Computational Modeling of the Weapon Identification Task</span>
-            <p class="venue">
-              Independent project, Freeman Lab &middot; Sept &ndash; Dec 2025
-            </p>
-            <p class="blurb">
-              DDM and MPT models fit to Weapon Identification Task behavior to split decision bias
-              into latent parameters, compared across competing cognitive architectures, then
-              integrated with fMRI activation to test model-based accounts of threat and control
-              processes in biased decision-making.
-            </p>
-          </div>
-        </article>
-
-        <!-- ------------------------------------------------------- proj 3 -->
-        <article class="item">
+        <!-- --------------------------------------------------- collateral harm -->
+        <article class="item is-highlighted">
           <div class="thumb">
             <!-- schematic: drift path aligned to an ERP time course -->
-            <svg viewBox="0 0 320 200" role="img" aria-label="Drift diffusion parameters aligned with EEG time course">
+            <svg viewBox="0 0 320 200" role="img" aria-label="Drift diffusion parameters aligned with an EEG time course">
               <rect width="320" height="200" fill="var(--fig-bg)" />
               <line x1="30" y1="30" x2="292" y2="30" stroke="var(--fig-ink)" stroke-width="1.8" />
               <line x1="30" y1="96" x2="292" y2="96" stroke="var(--fig-ink)" stroke-width="1.8" />
@@ -309,19 +163,123 @@
           </div>
           <div>
             <span class="title">
-              Computational and Neural Mechanisms of Punishment Decision-Making
+              Computational and neural mechanisms of race-dependent influence of civilian suffering
+              on collateral-harm decisions during intergroup conflicts
             </span>
+            <p class="authors">
+              <span class="me">Juncheng Lu</span>*, Y. Zhang*, X. Han, Z. Xiao, X. Han&dagger; (2026)
+            </p>
             <p class="venue">
-              Undergraduate thesis, Xiaochun Han Lab &middot; Sept 2022 &ndash; June 2025
+              Journal of Experimental Social Psychology, <span class="status">revise &amp; resubmit</span>
             </p>
             <p class="blurb">
-              DDM decomposition of intergroup harm-related decisions, combined with EEG to identify
-              temporal neural markers of distinct decision stages, testing the correspondence between
-              latent decision parameters and ERP dynamics. Contributed to design, data collection,
-              analysis, and manuscript writing; the manuscript is now under review at JESP.
+              Two studies (total <em>N</em> = 983) pairing a cross-cultural behavioral experiment
+              with EEG. Hierarchical Bayesian DDMs and P2/N2 measures relate civilian race and pain
+              expression to decision caution: a Race &times; Expression interaction appears in
+              caution even though overt attack decisions do not differ across conditions. I led study
+              design, implementation, and data collection with the PI, and ran all behavioral,
+              computational, and EEG analyses.
             </p>
           </div>
         </article>
+
+        <!-- ------------------------------------------------------- social roles -->
+        <article class="item">
+          <div class="thumb">
+            <!-- schematic: a civilian/soldier gap that narrows once role information is given -->
+            <svg viewBox="0 0 320 200" role="img" aria-label="Schematic: the civilian-soldier difference narrows when social-role information is available">
+              <rect width="320" height="200" fill="var(--fig-bg)" />
+              <line x1="24" y1="168" x2="296" y2="168" stroke="var(--fig-ink)" stroke-width="1.6" />
+              <!-- without role information: large gap -->
+              <rect x="52" y="46" width="30" height="122" fill="var(--fig-a)" opacity="0.75" />
+              <rect x="94" y="128" width="30" height="40" fill="var(--fig-b)" opacity="0.75" />
+              <path d="M67 36 L67 26 L109 26 L109 118" fill="none" stroke="var(--fig-ink)"
+                    stroke-width="1.3" stroke-dasharray="3 3" />
+              <!-- with role information: small gap -->
+              <rect x="196" y="82" width="30" height="86" fill="var(--fig-a)" opacity="0.75" />
+              <rect x="238" y="102" width="30" height="66" fill="var(--fig-b)" opacity="0.75" />
+              <path d="M211 72 L211 62 L253 62 L253 92" fill="none" stroke="var(--fig-ink)"
+                    stroke-width="1.3" stroke-dasharray="3 3" />
+              <!-- arrow between panels -->
+              <path d="M146 104 L174 104" stroke="var(--fig-ink)" stroke-width="1.8" />
+              <path d="M168 99 L176 104 L168 109 Z" fill="var(--fig-ink)" />
+            </svg>
+          </div>
+          <div>
+            <span class="title">
+              Cognitive mechanism of killing-decision discrimination between combatants and civilians
+              during intergroup conflict: The influence of social-role information
+            </span>
+            <p class="authors">
+              Y. Zhang*, <span class="me">Juncheng Lu</span>*, X. Han&dagger; (2026)
+            </p>
+            <p class="venue">Manuscript in preparation</p>
+            <p class="blurb">
+              Four studies on how social-role information shapes civilian&ndash;soldier differences in
+              attack decisions, bystander judgments, and representations of warmth and competence.
+              Logistic and linear mixed-effects models over participants and social roles show that
+              the civilian&ndash;soldier difference shrinks once role information is available, across
+              both decision and representation tasks.
+            </p>
+          </div>
+        </article>
+
+        <!-- ------------------------------------------- weapon identification -->
+        <article class="item">
+          <div class="thumb">
+            <!-- schematic: latent parameters mapped onto brain activation -->
+            <svg viewBox="0 0 320 200" role="img" aria-label="Model parameters linked to brain activation schematic">
+              <rect width="320" height="200" fill="var(--fig-bg)" />
+              <rect x="26" y="72" width="74" height="13" rx="4" fill="var(--fig-a)" opacity="0.75" />
+              <rect x="26" y="96" width="50" height="13" rx="4" fill="var(--fig-b)" opacity="0.75" />
+              <rect x="26" y="120" width="62" height="13" rx="4" fill="var(--fig-line)" opacity="0.6" />
+              <path d="M112 103 L142 103" stroke="var(--fig-ink)" stroke-width="2" />
+              <path d="M136 97 L144 103 L136 109 Z" fill="var(--fig-ink)" />
+              <path d="M218 46 C252 42 284 66 284 98 C284 132 256 156 222 154 C204 153 196 146 182 143 C160 138 152 122 154 100 C156 76 172 64 190 60 C204 57 206 47 218 46 Z"
+                    fill="none" stroke="var(--fig-ink)" stroke-width="2" />
+              <path d="M190 60 C200 84 194 120 191 143" fill="none" stroke="var(--fig-line)" stroke-width="1.3" />
+              <path d="M232 50 C224 80 232 122 236 152" fill="none" stroke="var(--fig-line)" stroke-width="1.3" />
+              <circle cx="250" cy="88" r="15" fill="var(--fig-a)" opacity="0.5" />
+              <circle cx="206" cy="118" r="11" fill="var(--fig-b)" opacity="0.5" />
+            </svg>
+          </div>
+          <div>
+            <span class="title">Computational modeling of the weapon identification task</span>
+            <p class="venue">Independent project, Freeman Lab &middot; Sept &ndash; Dec 2025</p>
+            <p class="blurb">
+              DDM and MPT models fit to weapon-identification behavior to examine how evidence
+              accumulation and latent processing components contribute to biased decisions. Competing
+              cognitive architectures were compared, and model-derived parameters related to fMRI
+              activation to evaluate accounts of threat processing and cognitive control.
+            </p>
+          </div>
+        </article>
+
+        <p class="note">* Equal contribution. &nbsp;&dagger; Corresponding author.</p>
+      </section>
+
+      <!-- ================================================================ -->
+      <!-- conference                                                        -->
+      <!-- ================================================================ -->
+      <section id="conference">
+        <h2>Conference</h2>
+
+        <div class="entry">
+          <div>
+            <div class="entry-role">
+              Computational and neural mechanisms of decision-making causing same-race vs. other-race
+              civilian casualties during intergroup conflicts
+            </div>
+            <div class="entry-where">
+              <span class="me">Juncheng Lu</span>, X. Han&dagger; &middot; Social and Affective
+              Neuroscience Society Annual Meeting, Toronto, Canada
+            </div>
+            <div class="entry-detail">
+              Accepted for oral and poster presentation; unable to present due to visa restrictions.
+            </div>
+          </div>
+          <div class="entry-when">April 2024</div>
+        </div>
       </section>
 
       <!-- ================================================================ -->
@@ -337,8 +295,8 @@
               Social Cognitive and Neural Sciences Lab, Columbia University &middot; PI: Dr. Jon Freeman
             </div>
             <div class="entry-detail">
-              Computational modeling and model-based analysis of social decision-making and implicit
-              bias, using DDM/MPT approaches and fMRI-informed hypotheses.
+              Computational modeling and model-based analysis of implicit bias and social
+              decision-making, using MPT/Quad and drift-diffusion approaches alongside fMRI.
             </div>
           </div>
           <div class="entry-when">Sept 2025 &ndash; present<br />New York, NY</div>
@@ -351,8 +309,9 @@
               Intergroup Relation Neuroscience Lab, Beijing Normal University &middot; PI: Dr. Xiaochun Han
             </div>
             <div class="entry-detail">
-              Behavioral, EEG, and computational analyses of intergroup decision-making, leading to a
-              conference presentation and two manuscripts.
+              Led study design, experimental implementation, and data collection across two studies
+              (<em>N</em> = 983) with the PI; ran all behavioral, computational, and EEG analyses,
+              leading to two manuscripts and a conference presentation.
             </div>
           </div>
           <div class="entry-when">Mar 2022 &ndash; June 2025<br />Beijing, China</div>
@@ -378,8 +337,8 @@
             <div class="entry-role">B.S. in Psychology</div>
             <div class="entry-where">Beijing Normal University</div>
             <div class="entry-detail">
-              Coursework: Computational Cognitive Neuroscience &middot; Brain Imaging Data Modeling
-              &middot; fMRI: Principles, Experiment Design and Data Analysis
+              Selected coursework: Computational Cognitive Neuroscience &middot; Brain Imaging Data
+              Modeling &middot; fMRI: Principles, Experiment Design and Data Analysis
             </div>
           </div>
           <div class="entry-when">Sept 2020 &ndash; July 2024</div>
@@ -390,36 +349,30 @@
       <!-- toolkit                                                           -->
       <!-- ================================================================ -->
       <section id="toolkit">
-        <h2>Methods &amp; Tools</h2>
+        <h2>Technical Skills</h2>
 
         <div class="toolkit">
-          <div class="tool-group">
-            <div class="tool-label">Computational methods</div>
+          <div class="tool-group wide">
+            <div class="tool-label">Programming</div>
             <div class="tool-body">
-              Hierarchical Bayesian modeling &middot; Drift Diffusion Model (DDM) &middot;
-              Multinomial Processing Tree (MPT) &middot; mixed-effects models
+              Python (HDDM, NumPy, pandas) &middot; R (brms, lme4, TreeBUGS, rtmpt) &middot;
+              MATLAB (EEGLAB, SPM12, Psychtoolbox) &middot; JavaScript/HTML (jsPsych)
+            </div>
+          </div>
+
+          <div class="tool-group">
+            <div class="tool-label">Modeling &amp; statistics</div>
+            <div class="tool-body">
+              Hierarchical Bayesian modeling &middot; DDM and MPT/Quad models &middot; GLMM/LMM
+              &middot; MCMC diagnostics &middot; model comparison
             </div>
           </div>
 
           <div class="tool-group">
             <div class="tool-label">Neuroimaging</div>
             <div class="tool-body">
-              fMRI analysis (SPM12) &middot; EEG collection and analysis (EEGLAB) &middot;
-              brain&ndash;behavior correlation
-            </div>
-          </div>
-
-          <div class="tool-group">
-            <div class="tool-label">Python &amp; R</div>
-            <div class="tool-body">
-              Python (HDDM, NumPy, Pandas) &middot; R (brms, lme4, TreeBUGS, rtmpt)
-            </div>
-          </div>
-
-          <div class="tool-group">
-            <div class="tool-label">Experiment &amp; other</div>
-            <div class="tool-body">
-              MATLAB (EEGLAB, SPM12, Psychtoolbox) &middot; HTML/JavaScript (jsPsych)
+              EEG/ERP preprocessing and analysis &middot; fMRI preprocessing and modeling &middot;
+              model-based brain&ndash;behavior analysis
             </div>
           </div>
         </div>
@@ -427,9 +380,7 @@
 
       <footer>
         <span>Juncheng Lu &middot; jl7191@tc.columbia.edu</span>
-        <span>
-          Layout after <a href="https://jonbarron.info/">Jon Barron</a>.
-        </span>
+        <span>Layout after <a href="https://jonbarron.info/">Jon Barron</a>.</span>
       </footer>
     </div>
   </body>
