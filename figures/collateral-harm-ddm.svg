@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <style>
+    /* 自带调色板：外部 SVG 读不到父页面的 CSS 变量，所以颜色必须写在文件里。
+       深色模式靠这个 media query，删掉它图就变成固定浅色。 */
+    :root {
+      --fig-bg: #f2f3f4;
+      --fig-line: #9aa3ad;
+      --fig-ink: #333c45;
+      --fig-a: #1772d0;
+      --fig-b: #d97b3f;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fig-bg: #1b1f23;
+        --fig-line: #6b757f;
+        --fig-ink: #c8ced4;
+        --fig-a: #6fb6f7;
+        --fig-b: #e0955f;
+      }
+    }
+  </style>
+
+              <rect width="320" height="320" fill="var(--fig-bg)" />
+              <g transform="translate(0,60)">
+                <line x1="30" y1="30" x2="292" y2="30" stroke="var(--fig-ink)" stroke-width="1.8" />
+                <line x1="30" y1="96" x2="292" y2="96" stroke="var(--fig-ink)" stroke-width="1.8" />
+                <path d="M30 63 L56 52 L78 60 L104 42 L130 50 L156 36 L178 41 L196 30"
+                      fill="none" stroke="var(--fig-a)" stroke-width="2.4" stroke-linejoin="round" />
+                <circle cx="30" cy="63" r="3.4" fill="var(--fig-ink)" />
+              </g>
+            </svg>

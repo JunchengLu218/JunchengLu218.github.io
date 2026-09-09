@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <style>
+    /* 自带调色板：外部 SVG 读不到父页面的 CSS 变量，所以颜色必须写在文件里。
+       深色模式靠这个 media query，删掉它图就变成固定浅色。 */
+    :root {
+      --fig-bg: #f2f3f4;
+      --fig-line: #9aa3ad;
+      --fig-ink: #333c45;
+      --fig-a: #1772d0;
+      --fig-b: #d97b3f;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fig-bg: #1b1f23;
+        --fig-line: #6b757f;
+        --fig-ink: #c8ced4;
+        --fig-a: #6fb6f7;
+        --fig-b: #e0955f;
+      }
+    }
+  </style>
+
+              <rect width="320" height="320" fill="var(--fig-bg)" />
+              <g transform="translate(0,60)">
+              <g stroke="var(--fig-line)" stroke-width="1.8" fill="none">
+                <path d="M60 100 L128 58" />
+                <path d="M60 100 L128 142" />
+                <path d="M128 58 L212 34" />
+                <path d="M128 58 L212 82" />
+                <path d="M128 142 L212 118" />
+                <path d="M128 142 L212 166" />
+              </g>
+              <circle cx="60" cy="100" r="7" fill="var(--fig-ink)" />
+              <circle cx="128" cy="58" r="6" fill="var(--fig-a)" />
+              <circle cx="128" cy="142" r="6" fill="var(--fig-b)" />
+              <g fill="var(--fig-ink)">
+                <rect x="216" y="27" width="46" height="14" rx="3" />
+                <rect x="216" y="75" width="46" height="14" rx="3" />
+                <rect x="216" y="111" width="46" height="14" rx="3" />
+                <rect x="216" y="159" width="46" height="14" rx="3" />
+              </g>
+            </g>
+            </svg>

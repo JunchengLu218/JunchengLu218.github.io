@@ -21,18 +21,23 @@ data/               CV PDF
    (600×600 or larger; it gets cropped to a circle).
 2. **Scholar and LinkedIn URLs** — `index.html` has two `REPLACE_ME` placeholders in the
    link row. Fix them, or delete the lines you don't want.
-3. **Thumbnails** — the four figures are inline SVG *schematics*. Each matches the method
-   its entry actually used, but they illustrate the method — they are not plots of real
-   data. Swap in real figures when you have them.
+3. **Figures** — the four schematics live in `figures/` as standalone SVG files, referenced
+   by `<img>`. Replace a file in place and the page picks it up; no HTML edit needed. They
+   illustrate each entry's actual method but are **not plots of real data** — swap in real
+   figures when you have them.
 
-   Thumbnails are 1:1 (160×160 on desktop). A `<div class="thumb">` stacks its children in
-   one square; add `class="on-hover"` to a second image or SVG and it cross-fades in over
-   0.35s while the pointer is anywhere on the row:
+   Because an externally-referenced SVG cannot read the page's CSS variables, each file
+   carries its own palette plus a `prefers-color-scheme` block. Delete that block and the
+   figure stops adapting to dark mode.
+
+   Thumbnails are 1:1 (160×160 desktop). A `<div class="thumb">` stacks its children in one
+   square; add `class="on-hover"` to a second image and it cross-fades in over 0.35s while
+   the pointer is anywhere on the row:
 
    ```html
    <div class="thumb">
-     <img src="images/before.jpg" alt="what the figure shows" />
-     <img class="on-hover" src="images/after.jpg" alt="" aria-hidden="true" />
+     <img src="figures/before.svg" alt="what the figure shows" />
+     <img class="on-hover" src="figures/after.svg" alt="" aria-hidden="true" />
    </div>
    ```
 

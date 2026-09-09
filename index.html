@@ -105,34 +105,14 @@
 
         <!-- ---------------------------------------------------- metacognition -->
         <article class="item">
+          <!-- 图在 figures/ 里，可以单独重画后覆盖同名文件，不必改这里 -->
           <div class="thumb">
-            <!-- schematic: multinomial processing tree -->
-            <svg viewBox="0 0 320 320" role="img" aria-label="Multinomial processing tree schematic">
-              <rect width="320" height="320" fill="var(--fig-bg)" />
-              <g transform="translate(0,60)">
-              <g stroke="var(--fig-line)" stroke-width="1.8" fill="none">
-                <path d="M60 100 L128 58" />
-                <path d="M60 100 L128 142" />
-                <path d="M128 58 L212 34" />
-                <path d="M128 58 L212 82" />
-                <path d="M128 142 L212 118" />
-                <path d="M128 142 L212 166" />
-              </g>
-              <circle cx="60" cy="100" r="7" fill="var(--fig-ink)" />
-              <circle cx="128" cy="58" r="6" fill="var(--fig-a)" />
-              <circle cx="128" cy="142" r="6" fill="var(--fig-b)" />
-              <g fill="var(--fig-ink)">
-                <rect x="216" y="27" width="46" height="14" rx="3" />
-                <rect x="216" y="75" width="46" height="14" rx="3" />
-                <rect x="216" y="111" width="46" height="14" rx="3" />
-                <rect x="216" y="159" width="46" height="14" rx="3" />
-              </g>
-            </g>
-            </svg>
+            <img src="figures/metacognition-mpt.svg"
+                 alt="Schematic of a multinomial processing tree" />
           </div>
           <div>
             <span class="title">Metacognitive accuracy in implicit bias prediction</span>
-            <p class="authors"><span class="me">Juncheng Lu</span></p>
+            <!-- <p class="authors"><span class="me">Juncheng Lu</span></p> -->
             <p class="venue">Manuscript in preparation, 2026</p>
             <p class="blurb">
               Do people predict ingroup-affirming implicit biases more accurately than
@@ -149,27 +129,12 @@
         <article class="item is-highlighted">
           <!-- 悬停切换的示范：底层是行为（DDM 累积路径），鼠标移上去淡入神经层
                （ERP 时间进程）。两层的写法见「编辑指南.md」第 6 节。 -->
+          <!-- 两层：底层行为，悬停淡入神经层。见「编辑指南.md」第 6 节 -->
           <div class="thumb">
-            <!-- 底层：行为 -->
-            <svg viewBox="0 0 320 320" role="img" aria-label="Drift diffusion accumulation schematic; hovering adds the EEG time course">
-              <rect width="320" height="320" fill="var(--fig-bg)" />
-              <g transform="translate(0,60)">
-                <line x1="30" y1="30" x2="292" y2="30" stroke="var(--fig-ink)" stroke-width="1.8" />
-                <line x1="30" y1="96" x2="292" y2="96" stroke="var(--fig-ink)" stroke-width="1.8" />
-                <path d="M30 63 L56 52 L78 60 L104 42 L130 50 L156 36 L178 41 L196 30"
-                      fill="none" stroke="var(--fig-a)" stroke-width="2.4" stroke-linejoin="round" />
-                <circle cx="30" cy="63" r="3.4" fill="var(--fig-ink)" />
-              </g>
-            </svg>
-            <!-- 悬停层：神经。没有背景 rect，所以是透明的，叠在底层之上 -->
-            <svg class="on-hover" viewBox="0 0 320 320" aria-hidden="true" focusable="false">
-              <g transform="translate(0,60)">
-                <line x1="196" y1="30" x2="196" y2="150" stroke="var(--fig-line)" stroke-width="1.2" stroke-dasharray="4 4" />
-                <line x1="30" y1="150" x2="292" y2="150" stroke="var(--fig-line)" stroke-width="1.2" />
-                <path d="M30 150 L60 146 L84 168 L110 128 L136 160 L164 138 L192 154 L226 146 L292 149"
-                      fill="none" stroke="var(--fig-b)" stroke-width="2.2" stroke-linejoin="round" />
-              </g>
-            </svg>
+            <img src="figures/collateral-harm-ddm.svg"
+                 alt="Schematic of drift-diffusion evidence accumulation; hovering adds the EEG time course" />
+            <img class="on-hover" src="figures/collateral-harm-erp.svg"
+                 alt="" aria-hidden="true" />
           </div>
           <div>
             <span class="title">
@@ -196,26 +161,8 @@
         <!-- ------------------------------------------------------- social roles -->
         <article class="item">
           <div class="thumb">
-            <!-- schematic: a civilian/soldier gap that narrows once role information is given -->
-            <svg viewBox="0 0 320 320" role="img" aria-label="Schematic: the civilian-soldier difference narrows when social-role information is available">
-              <rect width="320" height="320" fill="var(--fig-bg)" />
-              <g transform="translate(0,60)">
-              <line x1="24" y1="168" x2="296" y2="168" stroke="var(--fig-ink)" stroke-width="1.6" />
-              <!-- without role information: large gap -->
-              <rect x="52" y="46" width="30" height="122" fill="var(--fig-a)" opacity="0.75" />
-              <rect x="94" y="128" width="30" height="40" fill="var(--fig-b)" opacity="0.75" />
-              <path d="M67 36 L67 26 L109 26 L109 118" fill="none" stroke="var(--fig-ink)"
-                    stroke-width="1.3" stroke-dasharray="3 3" />
-              <!-- with role information: small gap -->
-              <rect x="196" y="82" width="30" height="86" fill="var(--fig-a)" opacity="0.75" />
-              <rect x="238" y="102" width="30" height="66" fill="var(--fig-b)" opacity="0.75" />
-              <path d="M211 72 L211 62 L253 62 L253 92" fill="none" stroke="var(--fig-ink)"
-                    stroke-width="1.3" stroke-dasharray="3 3" />
-              <!-- arrow between panels -->
-              <path d="M146 104 L174 104" stroke="var(--fig-ink)" stroke-width="1.8" />
-              <path d="M168 99 L176 104 L168 109 Z" fill="var(--fig-ink)" />
-            </g>
-            </svg>
+            <img src="figures/social-roles-gap.svg"
+                 alt="Schematic: the civilian-soldier difference narrows when social-role information is available" />
           </div>
           <div>
             <span class="title">
@@ -239,23 +186,8 @@
         <!-- ------------------------------------------- weapon identification -->
         <article class="item">
           <div class="thumb">
-            <!-- schematic: latent parameters mapped onto brain activation -->
-            <svg viewBox="0 0 320 320" role="img" aria-label="Model parameters linked to brain activation schematic">
-              <rect width="320" height="320" fill="var(--fig-bg)" />
-              <g transform="translate(0,60)">
-              <rect x="26" y="72" width="74" height="13" rx="4" fill="var(--fig-a)" opacity="0.75" />
-              <rect x="26" y="96" width="50" height="13" rx="4" fill="var(--fig-b)" opacity="0.75" />
-              <rect x="26" y="120" width="62" height="13" rx="4" fill="var(--fig-line)" opacity="0.6" />
-              <path d="M112 103 L142 103" stroke="var(--fig-ink)" stroke-width="2" />
-              <path d="M136 97 L144 103 L136 109 Z" fill="var(--fig-ink)" />
-              <path d="M218 46 C252 42 284 66 284 98 C284 132 256 156 222 154 C204 153 196 146 182 143 C160 138 152 122 154 100 C156 76 172 64 190 60 C204 57 206 47 218 46 Z"
-                    fill="none" stroke="var(--fig-ink)" stroke-width="2" />
-              <path d="M190 60 C200 84 194 120 191 143" fill="none" stroke="var(--fig-line)" stroke-width="1.3" />
-              <path d="M232 50 C224 80 232 122 236 152" fill="none" stroke="var(--fig-line)" stroke-width="1.3" />
-              <circle cx="250" cy="88" r="15" fill="var(--fig-a)" opacity="0.5" />
-              <circle cx="206" cy="118" r="11" fill="var(--fig-b)" opacity="0.5" />
-            </g>
-            </svg>
+            <img src="figures/weapon-id-fmri.svg"
+                 alt="Schematic of latent model parameters mapped onto brain activation" />
           </div>
           <div>
             <span class="title">Computational modeling of the weapon identification task</span>
