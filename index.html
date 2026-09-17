@@ -8,23 +8,18 @@
     <meta name="author" content="Juncheng Lu" />
     <meta
       name="description"
-      content="Juncheng Lu — M.A. student in Cognitive Science in Education at Teachers College, Columbia University. Hierarchical Bayesian modeling (drift diffusion, MPT/Quad) of intergroup harm, implicit bias, and metacognition, with EEG and fMRI."
+      content="Juncheng Lu — M.A. student in Cognitive Science in Education at Teachers College, Columbia University."
     />
-
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Juncheng Lu" />
-    <meta
-      property="og:description"
-      content="Computational modeling of social decision-making, implicit bias, and metacognition. Teachers College, Columbia University."
-    />
     <meta property="og:url" content="https://junchenglu218.github.io/" />
     <meta name="twitter:card" content="summary" />
 
     <link rel="canonical" href="https://junchenglu218.github.io/" />
     <!-- 图标三件套（顺序照 Andrey Sitnik 的 "How to Favicon" 惯例）：
-         .ico 兜底给不支持 SVG favicon 的浏览器（Safari 26 以前），
-         .svg 是主图标、会跟随深浅色模式，
-         apple-touch-icon 是 iOS 加到主屏时用的。 -->
+    .ico 兜底给不支持 SVG favicon 的浏览器（Safari 26 以前），
+    .svg 是主图标、会跟随深浅色模式，
+    apple-touch-icon 是 iOS 加到主屏时用的。 -->
     <link rel="icon" href="images/favicon/favicon.ico" sizes="32x32" />
     <link rel="icon" href="images/favicon/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png" />
@@ -49,9 +44,9 @@
       <header class="masthead">
         <div>
           <h1 class="name">Juncheng Lu</h1>
-          <p class="tagline">
+          <!-- <p class="tagline">
             M.A. student, Cognitive Science in Education &middot; Teachers College, Columbia University
-          </p>
+          </p> -->
 
           <p>
             I'm a master's student in Cognitive Science in Education at
@@ -63,17 +58,16 @@
           </p>
 
           <p>
-            I use computational models &mdash; hierarchical Bayesian drift diffusion, MPT/Quad
-            &mdash; to break social decisions apart into the latent processes that produce them, and
-            to connect those processes to neural measures (EEG, fMRI). Two questions run through my
-            work: when a group bias shows up in behavior, <em>which</em> component of the decision
-            actually carries it; and how accurately people can predict their own biases.
+            Before Columbia I received my B.S. in Psychology from
+            <a href="https://english.bnu.edu.cn/">Beijing Normal University</a>, where I worked with
+            <a href="https://scholar.google.com/citations?user=2uUJ76oAAAAJ&hl=en">Dr. Xiaochun Han</a> 
+            on the cognitive and neural mechanisms of social decision-making.
           </p>
 
           <p>
-            Before Columbia I received my B.S. in Psychology from
-            <a href="https://english.bnu.edu.cn/">Beijing Normal University</a>, where I worked with
-            <a href="https://scholar.google.com/citations?user=2uUJ76oAAAAJ&hl=en">Dr. Xiaochun Han</a> on the cognitive and neural mechanisms of intergroup harm.
+            I study how people make social decisions, using evidence-accumulation and process-dissociation models. 
+            In some projects I relate model parameters to EEG and fMRI; in others I ask which latent decision processes people can monitor. 
+            My current work focuses on harm decisions, racial bias in speeded choice, and metacognition of decision bias.
           </p>
 
           <p class="linkrow">
@@ -85,7 +79,6 @@
           </p>
         </div>
 
-        <!-- TODO(you): drop a square headshot at images/profile.jpg -->
         <img
           class="portrait"
           src="images/profile/profile-2.jpeg"
@@ -100,48 +93,18 @@
       <!-- ================================================================ -->
       <section id="research">
         <h2>Research</h2>
-        <p class="section-intro">
-          We make countless decisions every day. I am interested in the cognitive
-          processes and neural mechanisms that underlie them. Combining carefully
-          designed experiments with computational modeling and neuroimaging, I
-          decompose decisions into latent cognitive processes and seek to link
-          those processes to their neural implementation.
-        </p>
-
-        <!-- ---------------------------------------------------- metacognition -->
-        <article class="item">
-          <!-- 图在 figures/ 里，可以单独重画后覆盖同名文件，不必改这里 -->
-          <div class="thumb">
-            <img src="images/projects/metacognition-mpt.svg"
-                 alt="Schematic of a multinomial processing tree" />
-          </div>
-          <div>
-            <span class="title">Metacognitive accuracy in implicit bias prediction</span>
-            <!-- <p class="authors"><span class="me">Juncheng Lu</span></p> -->
-            <p class="venue">Manuscript in preparation, 2026</p>
-            <p class="blurb">
-              Do people predict ingroup-affirming implicit biases more accurately than
-              outgroup-affirming ones? Across 2,986 IAT observations from 1,866
-              participants on four race and age IATs, I link hierarchical multinomial processing tree
-              (MPT)/ quadruple process model (Quad) and hierarchical drift-diffusion model (HDDM)
-              parameters to directional and continuous prediction accuracy, holding explicit attitudes constant
-              in mixed-effects models, and test latent cognitive processes in the computational modeling framework.
-            </p>
-          </div>
-        </article>
 
         <!-- --------------------------------------------------- collateral harm -->
         <article class="item is-highlighted">
           <div class="thumb">
-            <img src="images/projects/collateral-harm-ddm.svg"
-                 alt="Schematic of hierarchical drift-diffusion evidence accumulation; hovering adds the EEG time course" />
-            <img class="on-hover" src="images/projects/collateral-harm-erp.svg"
-                 alt="" aria-hidden="true" />
+            <img src="images/projects/collateral-harm-erp.svg"
+            alt="Event-related potential at frontal-central electrodes for neutral civilian expressions, with the P2 and N2 measurement windows shaded; hovering overlays the painful-expression waveform" />
+            <img class="on-hover" src="images/projects/collateral-harm-erp-pain.svg"
+            alt="" aria-hidden="true" />
           </div>
           <div>
             <span class="title">
-              Computational and neural mechanisms of race-dependent influence of civilian suffering
-              on collateral-harm decisions during intergroup conflicts
+              Computational and Neural Mechanisms of Collateral-Harm Decisions
             </span>
             <p class="authors">
               <span class="me">Juncheng Lu</span>*, Y. Zhang*, X. Han, Z. Xiao, X. Han&dagger; (2026)
@@ -151,10 +114,99 @@
             </p>
             <p class="blurb">
               Two studies (total <em>N</em> = 983) pairing a cross-cultural behavioral experiment
-              with EEG. HDDMs and P2/N2 ERP components relate civilian race and pain
-              expression to decision caution: a Race &times; Expression interaction appears in both
-              neural response and model-derived parameters.I led study design, implementation, 
-              and data collection with the PI, and conducted all behavioral, computational, and EEG analyses.
+              with EEG. Hierarchical DDMs and P2/N2 ERP components relate civilian race and pain
+              expression to decision caution: Observed a Race &times; Expression interaction 
+              in neural signals associated with decision caution despite no parallel condition 
+              differences in overt attack choices; 
+              I led study design, data collection, and analyses, and contributed to manuscript drafting and revision.
+            </p>
+          </div>
+        </article>
+
+        <!-- ------------------------------------------- weapon identification -->
+        <article class="item">
+          <div class="thumb">
+            <!-- 内联 SVG（不是 <img>）：只有内联时页面的 .item:hover 才能作用到
+            里面的两条分布上。用法见「编辑指南.md」第 6 节。 -->
+            <svg viewBox="0 0 320 320" role="img"
+            aria-label="Two posterior distributions of a drift-diffusion model parameter, one per condition; hovering slides them apart">
+              <style>
+                /* 内联 SVG 的 style 作用于整个文档，所以类名都加 wid- 前缀避免撞车。
+                    颜色直接用页面的 CSS 变量，深浅色模式自动跟随。 */
+                .wid-dist { transition: transform 0.45s ease; }
+                .item:hover .wid-a,
+                .item:focus-within .wid-a { transform: translateX(-26px); }
+                .item:hover .wid-b,
+                .item:focus-within .wid-b { transform: translateX(26px); }
+                @media (prefers-reduced-motion: reduce) {
+                  .wid-dist { transition: none; }
+                }
+              </style>
+
+              <defs>
+                <!-- 位移时把分布裁在绘图区内，尾巴不会拖到坐标轴外面 -->
+                <clipPath id="wid-plot">
+                  <rect x="34" y="40" width="266" height="211" />
+                </clipPath>
+              </defs>
+
+              <rect width="320" height="320" fill="var(--fig-bg)" />
+
+              <!-- 参数轴 -->
+              <line x1="34" y1="250" x2="300" y2="250"
+                    stroke="var(--fig-ink)" stroke-width="1.4" />
+              <line x1="34" y1="250" x2="34" y2="255"
+                    stroke="var(--fig-ink)" stroke-width="1.4" />
+              <line x1="300" y1="250" x2="300" y2="255"
+                    stroke="var(--fig-ink)" stroke-width="1.4" />
+
+              <g clip-path="url(#wid-plot)">
+                <!-- 条件 A 的参数后验分布 -->
+                <g class="wid-dist wid-a">
+                  <path d="M65.0 250.0 L65.0 249.2 L66.3 249.1 L67.7 248.9 L69.0 248.7 L70.3 248.4 L71.7 248.1 L73.0 247.8 L74.4 247.4 L75.7 247.0 L77.1 246.5 L78.4 245.9 L79.8 245.2 L81.1 244.5 L82.5 243.6 L83.8 242.7 L85.2 241.6 L86.5 240.4 L87.8 239.0 L89.2 237.5 L90.5 235.8 L91.9 234.0 L93.2 232.0 L94.6 229.7 L95.9 227.3 L97.3 224.7 L98.6 221.8 L100.0 218.7 L101.3 215.3 L102.6 211.7 L104.0 207.9 L105.3 203.9 L106.7 199.6 L108.0 195.0 L109.4 190.2 L110.7 185.3 L112.1 180.1 L113.4 174.7 L114.8 169.1 L116.1 163.4 L117.5 157.6 L118.8 151.7 L120.1 145.7 L121.5 139.7 L122.8 133.7 L124.2 127.8 L125.5 121.9 L126.9 116.2 L128.2 110.6 L129.6 105.2 L130.9 100.1 L132.3 95.3 L133.6 90.8 L135.0 86.6 L136.3 82.9 L137.6 79.5 L139.0 76.7 L140.3 74.3 L141.7 72.4 L143.0 71.1 L144.4 70.3 L145.7 70.0 L147.1 70.3 L148.4 71.1 L149.8 72.4 L151.1 74.3 L152.4 76.7 L153.8 79.5 L155.1 82.9 L156.5 86.6 L157.8 90.8 L159.2 95.3 L160.5 100.1 L161.9 105.2 L163.2 110.6 L164.6 116.2 L165.9 121.9 L167.3 127.8 L168.6 133.7 L169.9 139.7 L171.3 145.7 L172.6 151.7 L174.0 157.6 L175.3 163.4 L176.7 169.1 L178.0 174.7 L179.4 180.1 L180.7 185.3 L182.1 190.2 L183.4 195.0 L184.8 199.6 L186.1 203.9 L187.4 207.9 L188.8 211.7 L190.1 215.3 L191.5 218.7 L192.8 221.8 L194.2 224.7 L195.5 227.3 L196.9 229.7 L198.2 232.0 L199.6 234.0 L200.9 235.8 L202.3 237.5 L203.6 239.0 L204.9 240.4 L206.3 241.6 L207.6 242.7 L209.0 243.6 L210.3 244.5 L211.7 245.2 L213.0 245.9 L214.4 246.5 L215.7 247.0 L217.1 247.4 L218.4 247.8 L219.7 248.1 L221.1 248.4 L222.4 248.7 L223.8 248.9 L225.1 249.1 L226.5 249.2 L226.5 250.0 Z" fill="var(--fig-a)" opacity="0.3" />
+                  <path d="M65.0 250.0 L65.0 249.2 L66.3 249.1 L67.7 248.9 L69.0 248.7 L70.3 248.4 L71.7 248.1 L73.0 247.8 L74.4 247.4 L75.7 247.0 L77.1 246.5 L78.4 245.9 L79.8 245.2 L81.1 244.5 L82.5 243.6 L83.8 242.7 L85.2 241.6 L86.5 240.4 L87.8 239.0 L89.2 237.5 L90.5 235.8 L91.9 234.0 L93.2 232.0 L94.6 229.7 L95.9 227.3 L97.3 224.7 L98.6 221.8 L100.0 218.7 L101.3 215.3 L102.6 211.7 L104.0 207.9 L105.3 203.9 L106.7 199.6 L108.0 195.0 L109.4 190.2 L110.7 185.3 L112.1 180.1 L113.4 174.7 L114.8 169.1 L116.1 163.4 L117.5 157.6 L118.8 151.7 L120.1 145.7 L121.5 139.7 L122.8 133.7 L124.2 127.8 L125.5 121.9 L126.9 116.2 L128.2 110.6 L129.6 105.2 L130.9 100.1 L132.3 95.3 L133.6 90.8 L135.0 86.6 L136.3 82.9 L137.6 79.5 L139.0 76.7 L140.3 74.3 L141.7 72.4 L143.0 71.1 L144.4 70.3 L145.7 70.0 L147.1 70.3 L148.4 71.1 L149.8 72.4 L151.1 74.3 L152.4 76.7 L153.8 79.5 L155.1 82.9 L156.5 86.6 L157.8 90.8 L159.2 95.3 L160.5 100.1 L161.9 105.2 L163.2 110.6 L164.6 116.2 L165.9 121.9 L167.3 127.8 L168.6 133.7 L169.9 139.7 L171.3 145.7 L172.6 151.7 L174.0 157.6 L175.3 163.4 L176.7 169.1 L178.0 174.7 L179.4 180.1 L180.7 185.3 L182.1 190.2 L183.4 195.0 L184.8 199.6 L186.1 203.9 L187.4 207.9 L188.8 211.7 L190.1 215.3 L191.5 218.7 L192.8 221.8 L194.2 224.7 L195.5 227.3 L196.9 229.7 L198.2 232.0 L199.6 234.0 L200.9 235.8 L202.3 237.5 L203.6 239.0 L204.9 240.4 L206.3 241.6 L207.6 242.7 L209.0 243.6 L210.3 244.5 L211.7 245.2 L213.0 245.9 L214.4 246.5 L215.7 247.0 L217.1 247.4 L218.4 247.8 L219.7 248.1 L221.1 248.4 L222.4 248.7 L223.8 248.9 L225.1 249.1 L226.5 249.2 L226.5 250.0 Z" fill="none" stroke="var(--fig-a)"
+                        stroke-width="2.2" stroke-linejoin="round" />
+                  <line x1="145.7" y1="250" x2="145.7" y2="70.0"
+                        stroke="var(--fig-a)" stroke-width="1.2" stroke-dasharray="4 4" />
+                </g>
+
+                <!-- 条件 B 的参数后验分布 -->
+                <g class="wid-dist wid-b">
+                  <path d="M102.2 250.0 L102.2 249.3 L103.6 249.2 L105.0 249.0 L106.4 248.8 L107.8 248.6 L109.2 248.4 L110.6 248.1 L112.0 247.7 L113.3 247.3 L114.7 246.9 L116.1 246.4 L117.5 245.8 L118.9 245.1 L120.3 244.4 L121.7 243.5 L123.1 242.6 L124.5 241.5 L125.9 240.3 L127.2 239.0 L128.6 237.5 L130.0 235.9 L131.4 234.1 L132.8 232.2 L134.2 230.0 L135.6 227.7 L137.0 225.2 L138.4 222.4 L139.8 219.5 L141.1 216.3 L142.5 213.0 L143.9 209.4 L145.3 205.6 L146.7 201.6 L148.1 197.4 L149.5 193.0 L150.9 188.5 L152.3 183.7 L153.7 178.8 L155.0 173.8 L156.4 168.7 L157.8 163.5 L159.2 158.2 L160.6 153.0 L162.0 147.7 L163.4 142.5 L164.8 137.3 L166.2 132.2 L167.6 127.3 L168.9 122.6 L170.3 118.1 L171.7 113.8 L173.1 109.9 L174.5 106.2 L175.9 102.9 L177.3 100.0 L178.7 97.5 L180.1 95.4 L181.5 93.7 L182.8 92.6 L184.2 91.8 L185.6 91.6 L187.0 91.8 L188.4 92.6 L189.8 93.7 L191.2 95.4 L192.6 97.5 L194.0 100.0 L195.3 102.9 L196.7 106.2 L198.1 109.9 L199.5 113.8 L200.9 118.1 L202.3 122.6 L203.7 127.3 L205.1 132.2 L206.5 137.3 L207.9 142.5 L209.2 147.7 L210.6 153.0 L212.0 158.2 L213.4 163.5 L214.8 168.7 L216.2 173.8 L217.6 178.8 L219.0 183.7 L220.4 188.5 L221.8 193.0 L223.1 197.4 L224.5 201.6 L225.9 205.6 L227.3 209.4 L228.7 213.0 L230.1 216.3 L231.5 219.5 L232.9 222.4 L234.3 225.2 L235.7 227.7 L237.0 230.0 L238.4 232.2 L239.8 234.1 L241.2 235.9 L242.6 237.5 L244.0 239.0 L245.4 240.3 L246.8 241.5 L248.2 242.6 L249.6 243.5 L250.9 244.4 L252.3 245.1 L253.7 245.8 L255.1 246.4 L256.5 246.9 L257.9 247.3 L259.3 247.7 L260.7 248.1 L262.1 248.4 L263.5 248.6 L264.8 248.8 L266.2 249.0 L267.6 249.2 L269.0 249.3 L269.0 250.0 Z" fill="var(--fig-b)" opacity="0.3" />
+                  <path d="M102.2 250.0 L102.2 249.3 L103.6 249.2 L105.0 249.0 L106.4 248.8 L107.8 248.6 L109.2 248.4 L110.6 248.1 L112.0 247.7 L113.3 247.3 L114.7 246.9 L116.1 246.4 L117.5 245.8 L118.9 245.1 L120.3 244.4 L121.7 243.5 L123.1 242.6 L124.5 241.5 L125.9 240.3 L127.2 239.0 L128.6 237.5 L130.0 235.9 L131.4 234.1 L132.8 232.2 L134.2 230.0 L135.6 227.7 L137.0 225.2 L138.4 222.4 L139.8 219.5 L141.1 216.3 L142.5 213.0 L143.9 209.4 L145.3 205.6 L146.7 201.6 L148.1 197.4 L149.5 193.0 L150.9 188.5 L152.3 183.7 L153.7 178.8 L155.0 173.8 L156.4 168.7 L157.8 163.5 L159.2 158.2 L160.6 153.0 L162.0 147.7 L163.4 142.5 L164.8 137.3 L166.2 132.2 L167.6 127.3 L168.9 122.6 L170.3 118.1 L171.7 113.8 L173.1 109.9 L174.5 106.2 L175.9 102.9 L177.3 100.0 L178.7 97.5 L180.1 95.4 L181.5 93.7 L182.8 92.6 L184.2 91.8 L185.6 91.6 L187.0 91.8 L188.4 92.6 L189.8 93.7 L191.2 95.4 L192.6 97.5 L194.0 100.0 L195.3 102.9 L196.7 106.2 L198.1 109.9 L199.5 113.8 L200.9 118.1 L202.3 122.6 L203.7 127.3 L205.1 132.2 L206.5 137.3 L207.9 142.5 L209.2 147.7 L210.6 153.0 L212.0 158.2 L213.4 163.5 L214.8 168.7 L216.2 173.8 L217.6 178.8 L219.0 183.7 L220.4 188.5 L221.8 193.0 L223.1 197.4 L224.5 201.6 L225.9 205.6 L227.3 209.4 L228.7 213.0 L230.1 216.3 L231.5 219.5 L232.9 222.4 L234.3 225.2 L235.7 227.7 L237.0 230.0 L238.4 232.2 L239.8 234.1 L241.2 235.9 L242.6 237.5 L244.0 239.0 L245.4 240.3 L246.8 241.5 L248.2 242.6 L249.6 243.5 L250.9 244.4 L252.3 245.1 L253.7 245.8 L255.1 246.4 L256.5 246.9 L257.9 247.3 L259.3 247.7 L260.7 248.1 L262.1 248.4 L263.5 248.6 L264.8 248.8 L266.2 249.0 L267.6 249.2 L269.0 249.3 L269.0 250.0 Z" fill="none" stroke="var(--fig-b)"
+                        stroke-width="2.2" stroke-linejoin="round" />
+                  <line x1="185.6" y1="250" x2="185.6" y2="91.6"
+                        stroke="var(--fig-b)" stroke-width="1.2" stroke-dasharray="4 4" />
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div>
+            <span class="title">Computational modeling of speeded weapon-versus-tool decisions under racial priming</span>
+            <p class="venue">Freeman Lab &middot; Sept &ndash; Dec 2025</p>
+            <p class="blurb">
+              HDDM and MPT models fit to speeded weapon-versus-tool decisions under racial priming to examine how evidence
+              accumulation and latent processing components contribute to biased decisions. Competing
+              cognitive architectures were compared, and model-derived parameters related to fMRI
+              activation to evaluate accounts of threat processing and cognitive control.
+            </p>
+          </div>
+        </article>
+
+        <!-- ---------------------------------------------------- metacognition -->
+        <article class="item">
+          <div class="thumb">
+            <img src="images/projects/metacognition-mpt.svg"
+            alt="Schematic of a multinomial processing tree" />
+          </div>
+          <div>
+            <span class="title">Metacognition of predictions bias on the Implicit Association Test</span>
+            <p class="authors">First author</p>
+            <p class="venue">Manuscript in preparation</span></p>
+            <p class="blurb">
+              How accurately can people predict their own IAT decision biases? 
+              Across 2,986 observations from 1,866 participants on four race and age IATs, 
+              I use hierarchical MPT/Quad and HDDM models to test which latent processes track metacognitive accuracy.
             </p>
           </div>
         </article>
@@ -163,41 +215,22 @@
         <article class="item">
           <div class="thumb">
             <img src="images/projects/social-roles-gap.svg"
-                 alt="Schematic of the civilian-soldier difference narrowing when social-role information is available" />
+            alt="Schematic of the civilian-soldier difference narrowing when social-role information is available" />
           </div>
           <div>
             <span class="title">
-              Cognitive mechanism of killing-decision discrimination between combatants and civilians
-              during intergroup conflict: The influence of social-role information
+              Cognitive and neural mechanisms of discriminated-attack decisions in intergroup conflicts
             </span>
             <p class="authors">
               Y. Zhang*, <span class="me">Juncheng Lu</span>*, X. Han&dagger; (2026)
             </p>
             <p class="venue">Manuscript in preparation</p>
-            <p class="blurb">
+            <p class="blurb"> d
               Four studies on how social-role information shapes civilian&ndash;soldier differences in
               attack decisions, bystander judgments, and representations of warmth and competence.
               Logistic and linear mixed-effects models over participants and social roles show that
               the civilian&ndash;soldier difference shrinks once role information is available, across
               both decision and representation tasks.
-            </p>
-          </div>
-        </article>
-
-        <!-- ------------------------------------------- weapon identification -->
-        <article class="item">
-          <div class="thumb">
-            <img src="images/projects/weapon-id-fmri.svg"
-                  alt="Schematic of latent model parameters mapped onto brain activation" />
-          </div>
-          <div>
-            <span class="title">Computational modeling of the weapon identification task</span>
-            <p class="venue">Independent project, Freeman Lab &middot; Sept &ndash; Dec 2025</p>
-            <p class="blurb">
-              HDDM and MPT models fit to weapon-identification behavior to examine how evidence
-              accumulation and latent processing components contribute to biased decisions. Competing
-              cognitive architectures were compared, and model-derived parameters related to fMRI
-              activation to evaluate accounts of threat processing and cognitive control.
             </p>
           </div>
         </article>
@@ -209,7 +242,7 @@
       <!-- conference                                                        -->
       <!-- ================================================================ -->
       <section id="conference">
-        <h2>Conference</h2>
+        <h2>Conference presentations</h2>
 
         <div class="entry">
           <div>
@@ -223,7 +256,8 @@
               , Toronto, Canada
             </div>
             <div class="entry-detail">
-              Accepted for oral and poster presentation; unable to present due to visa restrictions.
+              Selected for an oral presentation and poster presentation;
+              unable to present due to visa restrictions.
             </div>
           </div>
           <div class="entry-when">April 2024</div>
@@ -244,8 +278,7 @@
               , Columbia University &middot; PI: <a href="https://www.jonbfreeman.com/">Dr. Jon Freeman</a>
             </div>
             <div class="entry-detail">
-              Computational modeling and model-based analysis of implicit bias and social
-              decision-making, using MPT/Quad and drift-diffusion approaches alongside fMRI.
+              Computational modeling of speeded social decisions (HDDM, MPT/Quad) and model-based fMRI analyses of racial bias in object decisions.
             </div>
           </div>
           <div class="entry-when">Sept 2025 &ndash; present<br />New York, NY</div>
@@ -255,7 +288,7 @@
           <div>
             <div class="entry-role">Research Assistant</div>
             <div class="entry-where">
-              Intergroup Relation Neuroscience Lab, Beijing Normal University &middot; 
+              Intergroup Relations Neuroscience Lab, Beijing Normal University &middot; 
               PI: <a href="https://scholar.google.com/citations?user=2uUJ76oAAAAJ&hl=en">Dr. Xiaochun Han</a>
             </div>
             <div class="entry-detail">
