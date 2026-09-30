@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GRE Pair Practice · Juncheng Lu</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../stylesheet.css"><link rel="stylesheet" href="practice.css"><script src="bank.js" defer></script><script src="practice.js" defer></script></head>
+<body><main class="shell">
+<header><a href="../">← Homepage</a></header>
+<section class="intro"><h1>GRE Practice</h1><p>选出两个近义词，再用自己的话复述含义。</p></section>
+<section id="setup" class="card"><div class="section-title"><h2>开始一小轮</h2></div>
+<label for="bank">词库</label><select id="bank"><option value="bb-september-2026">BB 高新六选二 · 2026 年 9 月</option disabled>BB 高新六选二 · 2026 年 8 月（待导入）</option disabled>BB 六选二 · 精讲版上（待导入）</option disabled>BB 六选二 · 精讲版中（待导入）</option disabled>BB 六选二 · 精讲版下（待导入）</option disabled>BB 六选二 · 表格速记版（待导入）</option></select>
+<p id="bank-info" class="muted"></p><div class="settings"><div><label for="mode">练习方式</label><select id="mode"><option value="random">随机练习</option><option value="review">错题与待复习</option></select></div><div><label for="count">每轮题数</label><select id="count"><option>5</option><option>10</option><option>20</option></select></div></div>
+<button id="start" class="primary">开始 5 题 →</button><button id="resume" class="secondary" hidden>继续上次练习</button><p id="setup-message" role="status" class="muted"></p>
+<div class="stats"><div><strong id="attempts">0</strong><span>累计作答</span></div><div><strong id="accuracy">—</strong><span>配对正确率</span></div><div><strong id="review-count">0</strong><span>待复习词对</span></div></div></section>
+<section id="quiz" class="card" hidden><div class="section-title"><span id="position" class="eyebrow"></span><button id="exit" class="text-button">保存并返回</button></div><div class="track"><div id="progress"></div></div><h2 id="question-title" tabindex="-1">选出词表中的一对近义词</h2><p class="muted">点击两个词，再提交。再点一次可以取消选择。</p><div id="options" class="options"></div><p id="selection" class="muted" aria-live="polite">已选 0 / 2</p><button id="check" class="primary" disabled>确认配对</button>
+<div id="recall" hidden><p id="feedback" class="feedback" role="status"></p><h3>先复述，再看解释</h3><p>用自己的话说出这两个词的含义，以及它们的共同意思。</p><label for="paraphrase" class="muted">可以口头复述，也可以写下来（选填）</label><textarea id="paraphrase" rows="3" placeholder="我理解它们都表示……"></textarea><button id="reveal" class="primary">查看词表释义</button></div>
+<div id="answer" hidden><div id="definitions" class="definitions"></div><p class="source-note">配对与释义来自 9 月词表；这里练的是词汇关系，实际 GRE 六选二还需结合句子语境。</p><h3>你的含义复述怎么样？</h3><p class="muted">自行对照释义评分；页面不会自动评判复述。</p><div class="rating"><button data-rating="again" class="secondary">还不熟 · 加入复习</button><button data-rating="known" class="primary">记住了 · 下一题 →</button></div></div></section>
+<section id="summary" class="card" hidden><h2>这一轮，完成了。</h2><p id="summary-text"></p><div id="summary-list"></div><button id="again" class="primary">再来一轮 →</button><button id="home" class="secondary">返回词库选择</button></section>
+<footer><p id="storage-note">进度保存在当前浏览器，可中途退出后继续。</p><p>词库：BB 高新六选二 · 2026 年 9 月 · 仅本地练习</p></footer>
+</main></body></html>
